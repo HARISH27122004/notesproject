@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="navbar">
+        <h1>Notes</h1>
+    </div>
+
+    <div class="container">
+        <div class="book-container">
+            <h2>Hated by Millions, Loved by Billions</h2>
+            <h5>By <sub id="name">Harish</sub></h5>
+            <p>Cristiano Ronaldo is one of the most renowned footballers in history, known for his incredible skill, athleticism, and goal-scoring ability. Born on February 5, 1985, in Madeira, Portugal, he began his professional career with Sporting Lisbon in Portugal before moving to Manchester United in 2003. At Manchester United, under the guidance of Sir Alex Ferguson, Ronaldo quickly rose to prominence, winning three English Premier League titles and the UEFA Champions League in 2008. He also won his first Ballon d'Or in 2008. In 2018, Ronaldo transferred to Juventus in Italy for €100 million, continuing his dominance in Serie A and adding more trophies to his already illustrious career. Throughout his career, he has broken numerous records and achieved remarkable milestones, including becoming the all-time top scorer in the UEFA Champions League.
+                winning the UEFA European Championship in 2016 and the UEFA Nations League in 2019.Ronaldo is also known for his philanthropy and charitable work. He has used his platform to support various causes, including childhood hunger, education, and disaster relief efforts.
+                Overall, Cristiano Ronaldo's impact on football is immeasurable, and his legacy as one of the sport's greatest players is firmly cemented in history.</p>
+            <button onclick="deletebook(event)" class="hov">Delete</button>
+        </div>
+    </div>
+
+    <div class="popup-overlay"></div>
+        <div class="popup-box">
+            <h2>Add BooK</h2>
+            <form >
+                <input type="text" placeholder="Book Title" id="book-title-input">
+                <input type="text" placeholder="Book Author" id="book-author-input">
+                <textarea placeholder="Short Description" id="book-description-input"></textarea>
+                <button id="add-book" class="hov">Add</button>
+                <button id="cancel-book" class="hov">Cancel</button>
+            </form>
+        </div>
+
+    <button class="add-button" id="add-popupbutton">+</button>
+    <script src="./script.js"></script></script>
+</body>
+</html>
